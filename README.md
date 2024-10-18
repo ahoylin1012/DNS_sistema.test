@@ -1,1 +1,1 @@
-# DNS_sistema.test
+Aquí se adjuntará una descripción detallada del proyecto:

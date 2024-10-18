@@ -1,0 +1,5 @@
+SERVER ServerName HostID 
+USE_SERVER 
+VENDOR adskflex port=portnumber 
+INCREMENT feature_code Adskflex Version ExpDate NumberofLicenses \  
+VENDOR_STRING=UsageType:Behavior BORROW=4320 SUPERSEDE \ DUP_GROUP=DupGrp ISSUED=IssueDate SN=SerialNumber= \ 

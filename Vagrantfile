@@ -8,14 +8,11 @@ Vagrant.configure("2") do |config|
   config.vm.hostname = "tierra.sistema.test"
   config.vm.network = "private_network", ip:"192.168.57.103"
 
-  #Sincronizamos carpetas.
-  config.vm.synced_folder "./dns", "/vagrant/.dns"
-
   #Instalar en el servidor maestro copn Bind9
   config.vm.provision "shell", inline: <<-SHELL
   apt-get update
   apt-get install -y bind9 bind9utils bind9-doc
-
+              
 
 
 end

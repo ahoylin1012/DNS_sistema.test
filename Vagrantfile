@@ -11,11 +11,11 @@ Vagrant.configure("2") do |config|
   apt-get update
   apt-get install -y bind9 bind9utils bind9-doc¡
 
-  #Configurar el DNS mercurio
-  config.vm.define "mercurio" do |mercurio|
-  mercurio.vm.box = "debian/bookworm64"
-  mercurio.vm.hostname = "mercurio.sistema.test"
-  mercurio.vm.network "private_network", ip: "192.168.57.101"
+  #Configurar el DNS mercurio (imaginario)
+  #config.vm.define "mercurio" do |mercurio|
+  #mercurio.vm.box = "debian/bookworm64"
+  #mercurio.vm.hostname = "mercurio.sistema.test"
+  #mercurio.vm.network "private_network", ip: "192.168.57.101"
 
   #Configurar el DNS venus
   config.vm.define "venus" do |venus|
@@ -29,12 +29,13 @@ Vagrant.configure("2") do |config|
   tierra.vm.hostname = "tierra.sistema.test"
   tierra.vm.network "private_network", ip: "192.168.57.103"
   
-   # Configuración DNS marte
-  config.vm.define "marte" do |marte|
-  tierra.vm.box = "debian/bookworm64" 
-  tierra.vm.hostname = "marte.sistema.test"
-  tierra.vm.network "private_network", ip: "192.168.57.104"
+  # Configuración DNS marte (imaginario)
+  #config.vm.define "marte" do |marte|
+  #tierra.vm.box = "debian/bookworm64" 
+  #tierra.vm.hostname = "marte.sistema.test"
+  #tierra.vm.network "private_network", ip: "192.168.57.104"
 
+  
   #Reiniciar el servicio Bind9
   systemctl restart bind9
   SHELL
